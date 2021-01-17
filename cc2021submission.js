@@ -45,9 +45,9 @@ const largestPair = function(array) {
 largestPair([9, 5, 10, 2, 24, -1, -48]);
 
 const removeParenth = function(str) {
-  return str.replace('(','').replace(')','');
+  return str.replace(/ *\([^)]*\) */g, "");
 };
-removeParenth('ido(not)liketocode');
+removeParenth('i(donot)wanttobeadeveloper');
 
 const scoreScrabble = function(str) {
   let scores = {
